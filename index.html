@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gO-lO-gO</title>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/master.js"></script>
+<script src="js/main.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div data-role="page" id="home">
+  <div data-role="header" class="headText homeBtn">
+      gO-lO-gO
+  </div>
+  <div data-role="main" class="ui-content">
+      <a href="#startGame" data-transition="flip" id="startBtn"></a>
+	  <a href="#instructions" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-star ui-btn-icon-left ui-btn-a" data-transition="pop" style="display:block">Instructions</a>
+	  <div data-role="popup" id="instructions" data-overlay-theme="a" data-theme="a" class="ui-corner-all">
+    <form>
+        <div style="padding:10px 20px;">
+            <h3>Instructions</h3>
+            The logo of famous brands and companies will be shown, write their name in given space and submit. <br/>Thats it!!!
+        </div>
+    </form>
+</div>
+  </div>
+</div>
+      
+    
+<div data-role="page" id="startGame">
+  <div data-role="header" class="homeBtn headText">
+      gO-lO-gO
+  </div>
+  <div data-role="main" class="ui-content">
+	<div class="logoContainer" >
+	</div>
+	<br>
+	<input id="yourAnswer" placeholder="Your answer">
+	<div id="result"></div>
+  </div>
+  
+<div data-role="footer" class="headText">
+	<div id="submitIt">Submit</div>
+	<div id="skipIt">Skip</div>
+</div>
+</div>
+<div data-role="page" id="racedetail">
+    <div data-role="header">
+      <a class="backBtn" data-rel="back" data-direction="reverse"></a>    
+      <img src="img/logo.png"/>
+  </div>
+
+</div>    
+</body>
+</html>
